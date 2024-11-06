@@ -90,8 +90,8 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
                     <span className="hidden md:inline px-2">Delete</span>{" "}
                     <img
                       className="size-6 md:hidden"
-                      src="../../public/x-48.png"
-                      alt=""
+                      src="../../public/static/images/x-48.png"
+                      alt="delete-icon"
                     />
                   </button>
                 </td>
