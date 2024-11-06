@@ -2,19 +2,25 @@ const User = ({ user }) => {
   return (
     <div className="pt-10">
       <table className="w-full ">
-        <thead className=" text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          <tr>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Positoin</th>
+        <thead>
+          <tr className="border-t border-b border-gray-300 ">
+            <th className="text-xl">First name</th>
+            <th className="text-xl">Last name</th>
+            <th className="text-xl">Position</th>
           </tr>
         </thead>
         <tbody>
           {user.map((user) => (
-            <tr key={user.id}>
-              <td>{user.firstName}</td>
-              <td>{user.lastName}</td>
-              <td>{user.position}</td>
+            <tr key={user.id} className="border-t border-b ">
+              <td className="border-b border-t py-1 text-left pl-4">
+                {user.firstName}
+              </td>
+              <td className="border-b border-t py-1 text-left pl-4">
+                {user.lastName}
+              </td>
+              <td className="border-b border-t py-1 text-left pl-4">
+                {user.position}
+              </td>
             </tr>
           ))}
         </tbody>

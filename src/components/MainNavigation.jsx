@@ -7,7 +7,7 @@ const MainNavigation = ({ showPage }) => {
   console.log(pageName);
 
   return (
-    <nav className="flex justify-between border-b pb-3">
+    <nav className="flex justify-between items-center border-b h-[64px] my-auto">
       <Link to="/" className="text-2xl" onClick={() => showPage("")}>
         React Assessment
       </Link>

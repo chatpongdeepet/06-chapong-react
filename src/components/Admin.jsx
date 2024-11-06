@@ -21,7 +21,10 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
     <div>
       <div className="py-10">
         <h1 className="text-left mx-2 font-bold">Create user here</h1>
-        <form className="flex flex-col md:flex-row" onSubmit={handleSubmit}>
+        <form
+          className="flex flex-col flex-wrap md:flex-row items-center"
+          onSubmit={handleSubmit}
+        >
           <input
             className="border rounded-md m-2 pl-2"
             type="text"
@@ -48,11 +51,10 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
           />
           <button
             type="submit"
-            className="px-4 py-1 border rounded-md m-2  bg-green-600 text-white hover:bg-green-700 mx-auto"
+            className="px-4 py-1 border rounded-md m-2 bg-green-600 text-white hover:bg-green-700"
           >
             Add
           </button>
-          <hr />
         </form>
       </div>
       {user.length === 0 ? (
@@ -70,13 +72,13 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
           <tbody>
             {user.map((user) => (
               <tr key={user.id}>
-                <td className="border-b border-t py-1 text-left">
+                <td className="border-b border-t py-1 text-left pl-4">
                   {user.firstName}
                 </td>
-                <td className="border-b border-t py-1 text-left">
+                <td className="border-b border-t py-1 text-left pl-4">
                   {user.lastName}
                 </td>
-                <td className="border-b border-t py-1 text-left">
+                <td className="border-b border-t py-1 text-left pl-4">
                   {user.position}
                 </td>
                 <td className="border-b border-t py-1">

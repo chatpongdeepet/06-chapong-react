@@ -43,13 +43,17 @@ const Home = () => {
         </h1>
         <div className="max-w-lg mx-auto flex justify-between p-4 border-b-2">
           <button
-            className="border px-3 py-1 rounded-lg bg-blue-500 hover:bg-blue-800 text-white"
+            className={`border px-3 py-1 rounded-lg bg-gray-300 hover:bg-blue-700 hover:text-white ${
+              showPage === "user" ? "bg-blue-700 text-white" : "text-gray-600"
+            }`}
             onClick={() => setShowPage("user")}
           >
             User Home Sector
           </button>
           <button
-            className="border px-3 py-1 rounded-lg bg-blue-500 hover:bg-blue-800 text-white"
+            className={`border px-3 py-1 rounded-lg bg-gray-300 hover:bg-blue-700 hover:text-white ${
+              showPage === "admin" ? "bg-blue-700 text-white" : "text-gray-600"
+            }`}
             onClick={() => setShowPage("admin")}
           >
             Admin Home Sector
