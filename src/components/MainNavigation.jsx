@@ -7,20 +7,20 @@ const MainNavigation = ({ showPage }) => {
   console.log(pageName);
 
   return (
-    <nav className="flex justify-between items-center border-b h-[64px] my-auto">
-      <Link to="/" className="text-2xl" onClick={() => showPage("")}>
+    <nav className="max-w-md md:max-w-xl flex justify-between items-center border-b h-[64px] m-auto">
+      <Link to="/" className="text-xl md:text-2xl" onClick={() => showPage("")}>
         React Assessment
       </Link>
       <div className="w-[200px] flex justify-between">
         <Link
           to="/"
-          className={`relative text-2xl after:content-[''] after:block after:bg-blue-700 after:h-1 ${!pageName ? "after:w-full" : "after:w-0 hover:after:w-full"} after:transition-all after:duration-500 after:origin-left`}
+          className={`relative text-xl md:text-2xl after:content-[''] after:block after:bg-blue-700 after:h-1 ${!pageName ? "after:w-full" : "after:w-0 hover:after:w-full"} after:transition-all after:duration-500 after:origin-left`}
         >
           Home
         </Link>
         <Link
           to="/owner"
-          className={`relative text-2xl after:content-[''] after:block after:bg-blue-700 after:h-1 ${pageName === "owner" ? "after:w-full" : "after:w-0 hover:after:w-full"} after:transition-all after:duration-500 after:origin-left`}
+          className={`relative text-xl md:text-2xl after:content-[''] after:block after:bg-blue-700 after:h-1 ${pageName === "owner" ? "after:w-full" : "after:w-0 hover:after:w-full"} after:transition-all after:duration-500 after:origin-left`}
         >
           Owner
         </Link>

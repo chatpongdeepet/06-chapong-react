@@ -61,8 +61,8 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
         <p className="text-2xl font-bold text-gray-400">No data in table...</p>
       ) : (
         <table className="w-full border-b border-t">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
+          <thead>
+            <tr className="border-t border-b border-gray-300">
               <th className="text-xl">First name</th>
               <th className="text-xl">Last name</th>
               <th className="text-xl">Position</th>
