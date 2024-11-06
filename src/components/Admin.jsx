@@ -63,10 +63,10 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
         <table className="w-full border-b border-t">
           <thead>
             <tr className="border-t border-b border-gray-300">
-              <th className="text-xl">First name</th>
-              <th className="text-xl">Last name</th>
-              <th className="text-xl">Position</th>
-              <th className="text-xl">Action</th>
+              <th className="text-sm md:text-xl">First name</th>
+              <th className="text-sm md:text-xl">Last name</th>
+              <th className="text-sm md:text-xl">Position</th>
+              <th className="text-sm md:text-xl">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -85,9 +85,14 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
                   <button
                     type="button"
                     onClick={() => onDelete(user.id)}
-                    className="bg-red-500 text-white hover:bg-red-600 rounded-md px-2"
+                    className="bg-red-500 text-white hover:bg-red-600 rounded-md align-middle"
                   >
-                    Delete
+                    <span className="hidden md:inline px-2">Delete</span>{" "}
+                    <img
+                      className="size-6 md:hidden"
+                      src="../../public/x-48.png"
+                      alt=""
+                    />
                   </button>
                 </td>
               </tr>

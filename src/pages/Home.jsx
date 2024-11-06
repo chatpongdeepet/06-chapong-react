@@ -48,7 +48,7 @@ const Home = () => {
             }`}
             onClick={() => setShowPage("user")}
           >
-            User Home Sector
+            User <span className="hidden md:inline">Home</span> Sector
           </button>
           <button
             className={`border px-3 py-1 rounded-lg bg-gray-300 hover:bg-blue-700 hover:text-white ${
@@ -56,7 +56,7 @@ const Home = () => {
             }`}
             onClick={() => setShowPage("admin")}
           >
-            Admin Home Sector
+            Admin <span className="hidden md:inline">Home</span> Sector
           </button>
         </div>
         {showPage === "user" && <User user={users} />}

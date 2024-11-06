@@ -4,9 +4,9 @@ const User = ({ user }) => {
       <table className="w-full ">
         <thead>
           <tr className="border-t border-b border-gray-300 ">
-            <th className="text-xl">First name</th>
-            <th className="text-xl">Last name</th>
-            <th className="text-xl">Position</th>
+            <th className="text-md md:text-xl">First name</th>
+            <th className="text-md md:text-xl">Last name</th>
+            <th className="text-md md:text-xl">Position</th>
           </tr>
         </thead>
         <tbody>
