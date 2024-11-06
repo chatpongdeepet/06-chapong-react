@@ -14,13 +14,13 @@ const MainNavigation = ({ showPage }) => {
       <div className="w-[200px] flex justify-between">
         <Link
           to="/"
-          className={`${!pageName ? "underline" : ""} text-2xl  hover:underline bg-blue-500`}
+          className={`relative text-2xl after:content-[''] after:block after:bg-blue-700 after:h-1 ${!pageName ? "after:w-full" : "after:w-0 hover:after:w-full"} after:transition-all after:duration-500 after:origin-left`}
         >
           Home
         </Link>
         <Link
           to="/owner"
-          className={`${pageName === "owner" ? "underline" : ""} text-2xl hover:underline`}
+          className={`relative text-2xl after:content-[''] after:block after:bg-blue-700 after:h-1 ${pageName === "owner" ? "after:w-full" : "after:w-0 hover:after:w-full"} after:transition-all after:duration-500 after:origin-left`}
         >
           Owner
         </Link>
