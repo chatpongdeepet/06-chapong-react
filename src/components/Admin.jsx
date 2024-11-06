@@ -88,11 +88,9 @@ const Admin = ({ user, onDelete, onAdd, enteredValue, setEnteredValue }) => {
                     className="bg-red-500 text-white hover:bg-red-600 rounded-md align-middle"
                   >
                     <span className="hidden md:inline px-2">Delete</span>{" "}
-                    <img
-                      className="size-6 md:hidden"
-                      src="../../public/static/images/x-48.png"
-                      alt="delete-icon"
-                    />
+                    <span className="size-6 md:hidden px-2 font-bold font-medium">
+                      X
+                    </span>
                   </button>
                 </td>
               </tr>
